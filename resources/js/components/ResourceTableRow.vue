@@ -37,6 +37,7 @@
     >
       <div class="flex items-center justify-end space-x-0 text-gray-400">
         <InlineActionDropdown
+          v-if="availableActions.length > 0"
           :actions="availableActions"
           :endpoint="actionsEndpoint"
           :resource="resource"
